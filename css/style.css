@@ -378,6 +378,7 @@ a:hover{
     justify-content: space-between;
     align-items: flex-start;
     width: 1200px;
+    border-bottom: #aeadad 1px solid;
 }
 
 .final div .esporte{
@@ -408,4 +409,133 @@ a:hover{
     color: #2915c6;
     transition: 0.3s;
     text-decoration: underline;
+}
+
+.downloads{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 1200px;
+    border-bottom: #aeadad 1px solid;
+}
+
+.downloads h2{
+    color: #9f9dac;
+    font-size: 15px;
+    font-family: 'Reavy Italic', sans-serif;
+}
+.downloads p{
+    color: #473a9c;
+    font-size: 12px;
+    font-family: 'Reavy Italic', sans-serif;
+    font-weight: 700;
+}
+
+.apps{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 800px;
+}
+
+.principaisPatrocinadores{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.principaisPatrocinadores a{
+    margin-left: 18px;
+    margin-right: 18px;
+}
+.principaisPatrocinadores a.hp img{
+    width: 110px;
+}
+.patrocinadoresSecundarios{
+    margin-top: 20px;
+}
+
+.parte1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parte1 a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.parte2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parte2 a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.parte3{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parte3 a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.contatos {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #cdcbcb;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.redes{
+    display: flex;
+    align-items: center;
+}
+.redes a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.direitos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.direitos p{
+    font-size: 14px;
+    font-family: 'Reavy italic';
+    color: #afafaf;
+    margin-left: 50px;
+}
+.politicas ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.politicas a{
+    color: #aaaaaa;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
 }

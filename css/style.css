@@ -223,9 +223,9 @@ a:hover{
    width: 360px;
    height: 218px;
    align-items: center;
-   background:linear-gradient(90deg, #5139ef 0%, #460be8 100%);
+   background:linear-gradient(90deg, #9d8ffa 0%, #460be8 100%);
    border-radius: 10px;
-   padding: 0 10px 0 10px;
+   padding: 0 20px 0 20px;
 }
 
 .jogo2 .jogo{
@@ -234,7 +234,7 @@ a:hover{
     width: 365px;
     height: 218px;
     align-items: center;
-    background:linear-gradient(90deg, #5139ef 0%, #460be8 100%);
+    background:linear-gradient(90deg, #9d8ffa 0%, #460be8 100%);
     border-radius: 10px;
     padding: 0 0 0 20px;
  }

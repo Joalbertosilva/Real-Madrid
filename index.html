@@ -28,6 +28,29 @@
     </div>
     </div>
   </div>
+  <div class="init-second">
+    <div class="container-second">
+        <div class="logos-second">
+           <a href="realmadrid.html" class="logoLink"><img src="img/realLogo.webp" alt="Real Madrid logo"></a>
+            <a href="trofeus.html" class="trofeu"><img src="img/champions.webp" alt="trofeus"></a>
+        </div>
+    <nav class="menu-second">
+        <ul>
+            <li><a href="realmadrid.html">Home</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+            <li><a href="history.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="patrocinadores.html">Patrocinadores</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-hamburguer">
+        <button onclick="menuShow()"><img src="imgPatrocinioApps/imagem-menu-hamburguer.png" class="icon" alt="imagem-menu-hamburguer" width="40px"></button>
+    </div>
+    </div>
+  </div>
+    <script src="menu.js"></script>
   <main>
       <section class="primer">
           <a href="#"><div class="inicio">
@@ -73,7 +96,13 @@
             </div>
         </div>
       </section>
-     <div class="patrocinio"> 
+      <div class="more">
+        <button onclick="noticias()">Ver mais</button>
+        <div id="secundarias-responsivo"></div>
+      </div>
+      <script src="noticias.js"></script>
+     
+      <div class="patrocinio"> 
       <article>
        <a href="#"> <img src="img/emirates-patrocinio-editado.jpg" alt="Patrocinador emirates"></a>
       </article>
@@ -127,37 +156,74 @@
                 <a href="#">Mais</a>
             </div>
             </article>
+
         </div>
+        <article class="mais-jogos">
+            <a href="#"><h3>Mais jogos</h3></a>
+        </article>
     </section>
 
     <section class="trofeus">
-        <article><a href="#"><img src="img/anuncio.jpg" alt="Anuncio"></a></article>
+        <article><a href="#"><img src="img/anuncio.jpg" alt="Anuncio" ></a></article>
         <h2>Um Histórico Lendário</h2>
         <div class="trofeusGerais">
-            <a href="#"><img src="img/trofeus-champions.webp" alt="trofeus champions"></a>
+            <a href="#"><img src="img/trofeus-champions.webp" alt="trofeus champions" class="trofeu-champions-league"></a>
             <div class="gerais">
                 <h3>Champions League</h3>
-                <div>
+                <div class="div-normal">
                     <img src="img/champions-trofeu.png" alt="Champions troféus">
                     <p>14</p>
-                </div>
+                </div >
                 <h3>Mundial de clubes</h3>
-                <div>
+                <div class="div-normal">
                     <img src="img/mundial-imagem.png" alt="Mundial troféu">
                     <p>6</p>
                 </div>
                 <h3>Ligas nacionais</h3>
-                <div>
+                <div class="div-normal">
                     <img src="img/trofeu-laLiga.png" alt="La liga troféu">
-                    <p>34</p>
-                </div>
+                    <p>36</p>
+                </div class="div-normal">
                 <h3>Copa do Rei</h3>
-                <div>
+                <div class="div-normal">
                     <img src="img/trofeu-copaDelRey.png" alt="Copa do rei troféu">
                     <p>19</p>
                 </div>
                 <h3>Super Copa da Espanha</h3>
-                <div>
+                <div class="div-normal">
+                    <img src="img/super-copa-espanha.png" alt="Super copa troféu">
+                    <p>11</p>
+                </div>
+            </div>
+            <div class="gerais-responsivo">
+                <h3>Champions League</h3>
+                <div class="div-normal">
+                    <img src="img/champions-trofeu.png" alt="Champions troféus">
+                    <p>14</p>
+                </div >
+                <h3>Mundial de clubes</h3>
+                <div class="div-normal">
+                    <img src="img/mundial-imagem.png" alt="Mundial troféu">
+                    <p>6</p>
+                </div>
+                <div class="more-trofeus">
+                    <button onclick="maisTrofeus()"><img src="imgPatrocinioApps/imagem-seta-baixo.png" alt="imagem-seta-cima" width="25px" class="icon2"></button>
+                </div>
+                <script src="trofeus.js"></script>
+            <div class="outros-trofeus">
+                <script src="trofeus.js"></script>
+                <h3>Ligas nacionais</h3>
+                <div class="div-normal">
+                    <img src="img/trofeu-laLiga.png" alt="La liga troféu">
+                    <p>36</p>
+                </div class="div-normal">
+                <h3>Copa do Rei</h3>
+                <div class="div-normal">
+                    <img src="img/trofeu-copaDelRey.png" alt="Copa do rei troféu">
+                    <p>19</p>
+                </div>
+                <h3>Super Copa da Espanha</h3>
+                <div class="div-normal">
                     <img src="img/super-copa-espanha.png" alt="Super copa troféu">
                     <p>11</p>
                 </div>
@@ -180,7 +246,7 @@
 
                 <article class="esporte">
                     <a href="#"><h3>Basquete</h3></a>
-                    <a href="#"><p>Basquete time principal</p></a>
+                    <a href="#"><p>Time principal</p></a>
                 </article>
 
                 <article class="esporte">
@@ -199,7 +265,7 @@
                     <a href="#"><h3>Estádio Bernabéu</h3></a>
                     <a href="#"><p>RMTV ao vivo</p></a>
                     <a href="#"><p>Notícias</p></a>
-                    <a href="#"><p>Fundação Real Madrid</p></a>
+                    <a href="#"><p>Fundação RM</p></a>
                     <a href="#"><p>RM próximo</p></a>
                     <a href="#"><p>Escola de pós-graduação RM</p></a>
                 </article>
@@ -229,7 +295,13 @@
                     <a href="#"><img src="imgPatrocinioApps/adidas-imagem-logo.png" alt="Adidas"></a>
                     <a href="#" class="hp"><img src="imgPatrocinioApps/hp-logo-3.jpg" alt="Logo HP"></a>
                 </article>
+                <div class="borda-rodape"></div>
 
+                <div class="mostrar-todos-patrocinadores">
+                    <p>Ver todos os patrocinadores</p>
+                    <button class="mostrar-patrocinadores" onclick="mostrarPatrocinadores()"><img src="imgPatrocinioApps/imagem-seta-baixo.png" alt="imagem-seta-baixo" width="35px" class="icon3"></button>
+                </div>
+                <script src="patrocinadores.js"></script>
                 <article class="patrocinadoresSecundarios">
                     <div class="parte1">
                         <a href="#"><img src="imgPatrocinioApps/adobe-logo.png" alt="Adobe logo" title="Adobe"></a>
@@ -264,7 +336,7 @@
         <section class="contatos">
             <div class="links">
                 <article>
-                    <a href="https://www.realmadrid.com/en-US" target="_blank"><img src="img/realLogo.webp" alt="Logo Real Madrid" title="Real Madrid"></a>
+                    <a href="https://www.realmadrid.com/en-US" target="_blank" class="real-madrid-imagem"><img src="img/realLogo.webp" alt="Logo Real Madrid" title="Real Madrid"></a>
                 </article>
                 <div class="redes">
                     <a href="https://github.com/Joalbertosilva/Real-Madrid" target="_blank"><img src="imgPatrocinioApps/GitHub-logo.png" alt="GitHub logo" title="GitHub" width="60px"></a>

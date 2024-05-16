@@ -1,0 +1,457 @@
+
+@media screen and (min-width: 390px) and (max-width: 844px){
+    .init{
+        display: none;
+    }
+
+    .init-second{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 4rem;
+    }
+
+    .primer{
+        width: 100%;
+    }
+    .inicio{
+        margin-top: 150px;
+        border-radius: 20px;
+        width: 455px;
+        margin-left: 9.5rem;
+    }
+    .primer a img{
+        width: 300px;
+    }
+    .paragrafo{
+        margin-left: 25px;
+        margin-right: 10px;
+        width: 110px;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .primer:hover{
+        transition: 1s;
+        color: #2305e3;
+    }
+    
+    .img1{
+        display: flex;
+        margin-left: -1px;
+       
+    }
+    
+    .img1:hover{
+        transition: 1s;
+        transform:scale(1.1);
+        width: 300px;
+        height: auto;
+    }
+
+    .container-second{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        background:linear-gradient(90deg, #ffffff 0%, #e6e0fb 100%);
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        z-index: 1000;
+        border-bottom: 1px solid rgb(208, 207, 207);
+        border-radius: 10px;
+        padding-top: 1rem;
+    }
+    
+    .logo-second{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 10px 0 25px;
+        
+    }
+    .logoLink {
+        position: relative; /* Para que a borda seja posicionada em relação a este elemento */
+        display: inline-block; /* Para que o elemento tenha altura e largura baseadas no conteúdo */
+        border-right: 1px solid #e0e0e0;
+        margin-right: -18px;
+    }
+    a.logoLink img{
+        width: 85px;
+    }
+    a.trofeu img{
+        width: 45px;
+    }
+    .menu-second{
+        display: none;
+    }
+
+    .menu-second a{
+        display: block;
+        text-align: center;
+        padding: 5px 0;
+        text-decoration: none;
+        color: #000;
+        font-size: 1rem;
+    }
+    .menu-second li{
+        list-style: none;
+    }
+
+    .menu-hamburguer button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        margin-right: 25px;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .noticies{
+        display: block;
+    }
+
+    .principais{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-left: 2rem;
+    }
+
+    .noticia{
+        margin-bottom: 1.7rem;
+        width: 90%;
+    }
+
+    .secundarias{
+        display: none;
+    }
+    .more button{
+        display: block;
+    }
+
+    .open-secundarias{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-left: 2rem;
+    }
+
+    .patrocinio {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        width: 450px;
+        padding: 20px;
+        height: 5rem;
+        margin: 7rem 1rem 5rem 3.3rem;
+    }
+    
+    .patrocinio article a img {
+        max-width: 100%; 
+        height: auto;
+        align-items: center;
+    }
+    .patrocinio img{
+        width: 35rem;
+    }
+
+    .games{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-left: 1rem;
+    }
+
+    .games a h2{
+        margin-left: 7rem;
+        font-size: 30px;
+    }
+
+    .jogosGerais{
+        display: flex;
+        height: auto;
+        overflow-x: auto;
+        padding: 1rem;
+        margin-left: 7rem;
+        max-width: 800px;
+        width: 400px;
+        
+    }
+
+    .jogo1{
+        margin-right: 1rem;
+    }
+
+    .jogo2{
+        margin-right: 1rem;
+    }
+
+    .mais-jogos{
+        display: flex;
+        flex-direction: column;
+        margin-top: -45px;
+    }
+    .mais-jogos h3{
+        font-size: 20px;
+        margin-top: 4rem;
+        margin-left: 7rem;
+    }
+
+    .trofeus article {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        width: 28rem;
+        height: auto;
+        margin: -2rem 1.5rem 5rem 11.2rem;
+        padding: 20px;
+    }
+    
+    .trofeus article a img {
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .trofeus article img{
+        width: 45rem;
+    }
+
+    .trofeus h2{
+        font-size: 1.6rem;
+        margin-left: 10rem;
+        font-size: 25px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .trofeusGerais{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin-top: -20px;
+
+    }
+    .trofeu-champions-league{
+        width: 400px;
+        height: auto;
+        margin-bottom: 3rem;
+        margin-left: 10rem;
+    }
+    .gerais{
+        display: none;
+    }
+    .gerais-responsivo{
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        margin-left: 2rem;
+        color: #000;
+    }
+    .gerais-responsivo div p{
+        font-family: 'Reavy italic', sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        color: #ffffff;
+        margin-right: 10px;
+    }
+    
+    .div-normal{
+        background: linear-gradient(90deg, #ffffff 0%, #c7c7c7 100%);
+    }
+
+    .gerais-responsivo div p{
+        font-size: 1rem;
+        color: #000;
+    }
+
+    .more-trofeus button{
+        display: flex;
+        border: none;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .open-trofeus{
+        display: block;
+    }
+
+    .final .anuncio{
+        width: 420px;
+        height: auto;
+        margin-bottom: 100px;
+        margin: 2rem 0 5rem 11rem;
+        padding: 35px;
+    }
+
+    .final .anuncio img{
+        width: 380px;
+        height: auto;
+    }
+    .final{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 100px;
+        width: 95%;
+    }
+    .rodape {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        width: 420px; 
+        border-bottom: #aeadad 1px solid;
+        padding: 10px; 
+        margin: 0 2rem 0 11rem;
+        overflow: hidden;
+    }
+    
+    .esporte {
+        width: 92%; 
+    }
+    
+    .downloads{
+        display: flex;
+        margin: 2rem 0 2rem 9.4rem;
+        width: 450px;
+    }
+    
+    .apps{
+        margin: 2rem 3rem 2rem 2rem;
+        width: 100%;
+    }
+
+    .downloads .apps img{
+        width: 120px;
+        margin: 0 1rem 0 1rem
+    }
+    
+    .principaisPatrocinadores{
+        display: flex;
+        margin: 4rem 2rem 2rem 10rem;
+    }
+
+    .borda-rodape {
+        border-bottom: #d5d5d5 1px solid;
+        width: 420px;
+        margin: 0 auto; 
+        display: flex;
+        position: relative; 
+        left: 5rem; 
+    }
+    .principaisPatrocinadores a{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .principaisPatrocinadores a img{
+        width: 110px;
+    }
+
+    .principaisPatrocinadores a.hp img{
+        width: 80px;
+    }
+    .patrocinadoresSecundarios{
+        margin: 2rem 2rem 2rem 2rem;
+        width: 95%;
+    }
+    
+    .patrocinadoresSecundarios img{
+        width: 43px;
+    }
+
+    .mostrar-todos-patrocinadores{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem 2rem 2rem 5.5rem;
+        width: 95%;
+    }
+
+    .mostrar-todos-patrocinadores p{
+        font-family: 'Reavy italic', sans-serif;
+        font-size: 18px;
+        font-weight: 900;
+        color: #929292;
+        margin-right: 10px;
+        font-style: italic;
+    }
+
+    .mostrar-todos-patrocinadores button{
+        display: flex;
+        border: none;
+        margin: 1rem 2rem 2rem 2rem;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .patrocinadoresSecundarios{
+        display: none;
+    }
+    .open-patrocinadores{
+        display: block;
+        margin: 0 0 0 5.5rem;
+    }
+
+
+    .real-madrid-imagem img{
+        width: 80px;
+        margin-right: 2rem;
+    }
+
+    .redes img{
+        width: 30px;
+        border-radius: 5px;
+    }
+
+    .contatos{
+        width: 420px;
+        margin: 5rem 3rem 0 3rem;
+    }
+
+    .direitos{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin: 3rem 0 5rem 3rem;
+    }
+
+    .direitos article p{
+        font-size: 12px;
+        
+    }
+
+    .politicas ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 150px;
+    }
+
+    .politicas ul li{
+        margin-bottom: 10px;
+    }
+
+}

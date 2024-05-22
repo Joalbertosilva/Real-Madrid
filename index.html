@@ -6,6 +6,7 @@
     <title>Real Madrid</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/iphone.css">
+    <link rel="stylesheet" href="css/jogos.css">
 </head>
 <body>
   <div class="init">
@@ -35,20 +36,20 @@
            <a href="realmadrid.html" class="logoLink"><img src="img/realLogo.webp" alt="Real Madrid logo"></a>
             <a href="trofeus.html" class="trofeu"><img src="img/champions.webp" alt="trofeus"></a>
         </div>
-    <nav class="menu-second">
-        <ul>
-            <li><a href="realmadrid.html">Home</a></li>
-            <li><a href="Shop.html">Shop</a></li>
-            <li><a href="history.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="tickets.html">Tickets</a></li>
-            <li><a href="patrocinadores.html">Patrocinadores</a></li>
-        </ul>
-    </nav>
+        <div class="menu-hamburguer">
+            <button onclick="menuShow()"><img src="imgPatrocinioApps/imagem-menu-hamburguer.png" class="icon" alt="imagem-menu-hamburguer" width="40px"></button>
+            <nav class="menu-second">
+                <ul>
+                    <li><a href="realmadrid.html">Home</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="history.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <div class="menu-hamburguer">
-        <button onclick="menuShow()"><img src="imgPatrocinioApps/imagem-menu-hamburguer.png" class="icon" alt="imagem-menu-hamburguer" width="40px"></button>
-    </div>
     </div>
   </div>
     <script src="menu.js"></script>
@@ -98,7 +99,13 @@
         </div>
       </section>
       <div class="more">
-        <button onclick="noticias()">Ver mais</button>
+        
+        <button class="more-button" onclick="noticias()"> 
+            <p id="button-text">Mais notícias</p> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+          </svg></button>
         <div id="secundarias-responsivo"></div>
       </div>
       <script src="noticias.js"></script>
@@ -112,57 +119,78 @@
     <section class="games">
         <a href="#"><h2> Próximos jogos</h2></a>
         <div class="jogosGerais">
-            <article class="jogo1">
-                <a href="#" class="jogo">
-                <div><img src="img/FC_Bayern_München_logo-editado.png" alt="Emblema FC Bayern Munique"></div>
-                <div><img src="img/uefa-champions-league-logo-0.png" alt="Logo da champions"></div>
-                <div><img src="img/Real_Madrid-game-editado.png" alt="Emblema Real Madrid"></div>
-                
-            </a>
-            <div class="sobreJogo">
-                <p>.Football .First team .Male</p>
-                <h3>Champions League</h3>
-                <p class="data">&#128198 Terça-Feira, Abr 30, 16:00 PM h</p>
-                <p class="local">&#128205 Allianz Arena</p>
-                <a href="#">Mais</a>
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+    
+                <div class="slide first">
+                    <article class="jogo1">
+                        <a href="#" class="jogo">
+                            <div><img src="img/FC_Bayern_München_logo-editado.png" alt="Emblema FC Bayern Munique"></div>
+                            <div><img src="img/uefa-champions-league-logo-0.png" alt="Logo da champions"></div>
+                            <div><img src="img/Real_Madrid-game-editado.png" alt="Emblema Real Madrid"></div>
+                        </a>
+                        <div class="sobreJogo">
+                            <p>.Football .First team .Male</p>
+                            <h3>Champions League</h3>
+                            <p class="data">&#128198 Terça-Feira, Abr 30, 16:00 PM h</p>
+                            <p class="local">&#128205 Allianz Arena</p>
+                            <a href="#">Mais</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="slide">
+                    <article class="jogo2">
+                        <a href="#" class="jogo">
+                            <div><img src="img/Real_Madrid-game-editado.png" alt="Emblema Real Madrid"></div>
+                            <div><img src="img/laliga-logo-editado.png" alt="Logo da La Liga"></div>
+                            <div><img src="img/sevilla-fc-logo-0-editado.png" alt="Emblema Sevilla"></div>
+                        </a>
+                        <div class="sobreJogo">
+                            <p>.Football .First team .Male</p>
+                            <h3>La Liga</h3>
+                            <p class="data">&#128198 Sábado, Maio 04, 14:00 PM h</p>
+                            <p class="local">&#128205 Estádio Santiago Bernabéu</p>
+                            <a href="#">Mais</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="slide">
+                    <article class="jogo3">
+                        <a href="#" class="jogo">
+                            <div><img src="img/Real_Madrid-game-editado.png" alt="Emblema Real Madrid"></div>
+                            <div><img src="img/uefa-champions-league-logo-0.png" alt="Logo da champions"></div>
+                            <div><img src="img/FC_Bayern_München_logo-editado.png" alt="Emblema Bayern Munique"></div>
+                        </a>
+                        <div class="sobreJogo">
+                            <p>.Football .First team .Male</p>
+                            <h3>Champions League</h3>
+                            <p class="data">&#128198 Quarta-Feira, Maio 08, 16:00 PM h</p>
+                            <p class="local">&#128205 Estádio Santiago Bernabéu</p>
+                            <a href="#">Mais</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-            </article>
-            <article class="jogo2">
-                <a href="#" class="jogo">
-                <div><img src="img/Real_Madrid-game-editado.png" alt="Emblema Real Madrid"></div>
-                <div><img src="img/laliga-logo-editado.png" alt="Logo da La Liga"></div>
-                <div><img src="img/sevilla-fc-logo-0-editado.png" alt="Emblema Sevilla"></div>
-                
-            </a>
-            <div class="sobreJogo">
-                <p>.Football .First team .Male</p>
-                <h3>La Liga</h3>
-                <p class="data">&#128198 Sábado, Maio 04, 14:00 PM h</p>
-                <p class="local">&#128205 Estádio Santiago Bernabéu</p>
-                <a href="#">Mais</a>
+    
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
             </div>
-            </article>
-            <article class="jogo1">
-                <a href="#" class="jogo">
-                <div><img src="img/Real_Madrid-game-editado.png" alt="Emblema Real Madrid"></div>
-                <div><img src="img/uefa-champions-league-logo-0.png" alt="Logo da champions"></div>
-                <div><img src="img/FC_Bayern_München_logo-editado.png" alt="Emblema Bayern Munique"></div>
-                
-            </a>
-            <div class="sobreJogo">
-                <p>.Football .First team .Male</p>
-                <h3>Champions League</h3>
-                <p class="data">&#128198 Quarta-Feira, Maio 08, 16:00 PM h</p>
-                <p class="local">&#128205 Estádio Santiago Bernabéu</p>
-                <a href="#">Mais</a>
+    
+            <div class="navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
             </div>
-            </article>
-
         </div>
         <article class="mais-jogos">
             <a href="#"><h3>Mais jogos</h3></a>
         </article>
     </section>
+    <script src="jogos.js"></script>
 
     <section class="trofeus">
         <article><a href="#"><img src="img/anuncio.jpg" alt="Anuncio" ></a></article>

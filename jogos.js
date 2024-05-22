@@ -6,7 +6,7 @@ document.getElementById("radio1").checked = true;
 
 setInterval(function(){
     mostrarJogos();
-}, 3000);
+}, 4000);
 
 function mostrarJogos() {
     count++;

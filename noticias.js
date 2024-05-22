@@ -4,14 +4,22 @@ function noticias() {
     let noticia = document.querySelector(".more");
     let mostrarNoticia = document.querySelector(".secundarias");
     let botao = document.querySelector(".more button");
+    let svgIcon = botao.querySelector('svg');
+    let buttonText = document.getElementById('button-text');
 
     if (mostrarNoticia.classList.contains('open-secundarias')) {
-        // Se a classe 'open-secundarias' estiver presente, significa que as notícias secundárias estão sendo exibidas
         mostrarNoticia.classList.remove('open-secundarias');
-        botao.textContent = 'Ver mais'; // Altera o texto do botão para "Ver mais"
+        svgIcon.innerHTML = `
+            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+        `;
+        buttonText.textContent = 'Mais notícias';
     } else {
-        // Se a classe 'open-secundarias' não estiver presente, significa que as notícias secundárias não estão sendo exibidas
         mostrarNoticia.classList.add('open-secundarias');
-        botao.textContent = 'Ver menos'; // Altera o texto do botão para "Ver menos"
+        svgIcon.innerHTML = `
+        <path fill-rule="evenodd" d="M1.646 9.354a.5.5 0 0 1 .708 0L8 3.707l5.646 5.647a.5.5 0 0 1-.708.708L8 4.707l-5.646 5.647a.5.5 0 0 1-.708-.708"/>
+        <path fill-rule="evenodd" d="M1.646 5.354a.5.5 0 0 1 .708 0L8 0.707l5.646 5.647a.5.5 0 0 1-.708.708L8 1.707l-5.646 5.647a.5.5 0 0 1-.708-.708"/>
+    `;
+        buttonText.textContent = 'Ver menos';
     }
 }

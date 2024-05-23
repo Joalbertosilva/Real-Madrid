@@ -34,8 +34,8 @@
     justify-content: space-between;
     align-items: center;
     background:linear-gradient(90deg, #ebeaf6 0%, #e6e0fb 100%);
-    width: 380px;
-    height: 470px;
+    width: 600px;
+    height: 770px;
     border-radius: 10px;
     margin-top: 60px;
     padding-top: 20px;
@@ -44,54 +44,63 @@
     overflow: hidden;
 }
 
-.jogo1 .jogo{
+.jogo1 .jogo {
     display: flex;
     justify-content: space-between;
-    width: 360px;
-    height: 218px;
+    width: 560px;
+    height: 418px;
     align-items: center;
-    background:linear-gradient(90deg, #9d8ffa 0%, #460be8 100%);
+    background: linear-gradient(90deg, #9d8ffa 0%, #460be8 100%);
     border-radius: 10px;
     padding: 0 20px 0 20px;
-    margin-top: -10px;
+    margin-top: -150px;
+}
+
+.jogo1 .jogo div img {
+    margin: 0 40px 0 30px;
 }
 
 .jogo2 .jogo{
     display: flex;
     justify-content: space-between;
-    width: 360px;
-    height: 218px;
-    align-items: center;
-    background:linear-gradient(90deg, #9d8ffa 0%, #460be8 100%);
-    border-radius: 10px;
-    padding: 0 0 0 20px;
-    margin-top: -10px;
-}
-
-.jogo3 .jogo{
-    display: flex;
-    justify-content: space-between;
-    width: 360px;
-    height: 218px;
+    width: 560px;
+    height: 418px;
     align-items: center;
     background:linear-gradient(90deg, #9d8ffa 0%, #460be8 100%);
     border-radius: 10px;
     padding: 0 20px 0 20px;
-    margin-top: -10px;
+    margin-top: -150px;
 }
-
+.jogo2 .jogo div img {
+    margin: 0 30px 0 40px;
+}
+.jogo3 .jogo{
+    display: flex;
+    justify-content: space-between;
+    width: 560px;
+    height: 418px;
+    align-items: center;
+    background:linear-gradient(90deg, #9d8ffa 0%, #460be8 100%);
+    border-radius: 10px;
+    padding: 0 20px 0 20px;
+    margin-top: -150px;
+}
+.jogo3 .jogo div img {
+    margin: 0 30px 0 35px;
+}
 .jogo1{
     margin-right: 50px;
+    margin-left: 10px;
 }
 
 .jogo2{
-    width: 400px;
-    margin-left: 120px;
+    width: 600px;
+    margin-left: 204px;
 }
 
 .jogo3{
-    width: 400px;
-    margin-left: 240px;
+    width: 600px;
+    margin-left: 397.5px;
 }
 .sobreJogo{
     display: flex;
@@ -189,10 +198,11 @@
 .navigation{
     position: absolute;
     width: 400px;
-    margin-top: 70px;
-    margin-left: -15px;
+    margin-top: 680px;
+    margin-left: 6rem;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
 }
 
 .manual-btn{
@@ -236,8 +246,8 @@
     display: flex;
     width: 400px;
     justify-content: center;
-    margin-top: 70px;
-    margin-left: -15px;
+    margin-top: 680px;
+    margin-left: 6rem;
 }
 
 .navigation-auto div:not(:last-child){
@@ -252,4 +262,270 @@
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
     background: #8e8e8e;
+}
+@media screen and (min-width: 390px) and (max-width: 844px){
+    .games{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 70px 0 50px 0;
+    
+    }
+    
+    .games a h2{
+        font-family: 'Reavy italic', sans-serif;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 900;
+        color: #3221b1;
+        text-decoration: none;
+        margin-top: 100px;
+        margin-bottom: 70px;
+        width: 400px;
+        margin-left: 20rem;
+    }
+    
+    .games a h2:hover{
+        transition: 0.3s;
+        color: #170c6a;
+        text-decoration-line: underline;
+    }
+    
+    .jogosGerais {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background:linear-gradient(90deg, #ebeaf6 0%, #e6e0fb 100%);
+        width: 500px;
+        height: 770px;
+        border-radius: 10px;
+        margin-top: 60px;
+        padding-top: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        overflow: hidden;
+        margin-left: 9rem;
+    }
+    
+    .jogo1 .jogo {
+        display: flex;
+        justify-content: space-between;
+        width: 420px;
+        height: 418px;
+        align-items: center;
+        background: linear-gradient(90deg, #9d8ffa 0%, #460be8 100%);
+        border-radius: 10px;
+        padding: 0 20px 0 20px;
+        margin-top: -150px;
+    }
+    
+    .jogo1 .jogo div img {
+        margin: 0 30px 0 0px;
+    }
+    
+    .jogo2 .jogo{
+        display: flex;
+        justify-content: space-between;
+        width: 420px;
+        height: 418px;
+        align-items: center;
+        background:linear-gradient(90deg, #9d8ffa 0%, #460be8 100%);
+        border-radius: 10px;
+        padding: 0 20px 0 20px;
+        margin-top: -150px;
+    }
+    .jogo2 .jogo div img {
+        margin: 0 30px 0 0px;
+    }
+    .jogo3 .jogo{
+        display: flex;
+        justify-content: space-between;
+        width: 420px;
+        height: 418px;
+        align-items: center;
+        background:linear-gradient(90deg, #9d8ffa 0%, #460be8 100%);
+        border-radius: 10px;
+        padding: 0 20px 0 20px;
+        margin-top: -150px;
+    }
+    .jogo3 .jogo div img {
+        margin: 0 20px 0 10px;
+    }
+    
+    .jogo1{
+        margin-right: 50px;
+        margin-left: 30px;
+    }
+    
+    .jogo2{
+        width: 420px;
+        margin-left: 190px;
+    }
+    
+    .jogo3{
+        width: 420px;
+        margin-left: 345px;
+    }
+    .sobreJogo{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        align-items: flex-start;
+        height: 120px;
+    }
+    
+    .sobreJogo p{
+        font-family: 'reavy Italic', sans-serif;
+        font-size: 12px;
+        color: #7d7d7d;
+        margin-left: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .sobreJogo h3{
+        font-family: 'reavy Italic', sans-serif;
+        font-size: 20px;
+        color: #32344c;
+        margin-left: 30px;
+        margin-bottom: 35px;
+        font-weight: 700;
+    }
+    
+    .sobreJogo .data{
+        font-family: 'reavy Italic', sans-serif;
+        font-size: 15px;
+        color: #7d7d7d;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .sobreJogo a{
+        font-family: 'reavy Italic', sans-serif;
+        font-size: 15px;
+        color: #353434;
+        margin-left: 30px;
+        margin-bottom: 15px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    
+    .sobreJogo a:hover{
+        transition: 0.3s;
+        color: #2305e3;
+        text-decoration-line: underline;
+    }
+    
+    .sobreJogo .local{
+        font-family: 'reavy Italic', sans-serif;
+        font-size: 15px;
+        color: #7d7d7d;
+        margin-left: 30px;
+        margin-bottom: 35px;
+    }
+    
+    .mais-jogos{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .mais-jogos h3{
+        font-size: 20px;
+        font-family: 'Reavy Italic', sans-serif;
+        font-weight: 900;
+        color: #6047ff;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+    
+    .mais-jogos h3:hover{
+        transition: 0.2s;
+        color: #616161;
+        text-decoration: underline;
+    }
+    .slides{
+        width: 400%;
+        height: 400px;
+        display: flex;
+    }
+    
+    .slides input{
+        display: none;
+    }
+    
+    .slide{
+        width: 25%;
+        position: relative;
+        transition: 2s;
+    }
+    
+    .navigation{
+        position: absolute;
+        width: 400px;
+        margin-top: 680px;
+        margin-left: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .manual-btn{
+        border: 2px solid #8e8e8e;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .manual-btn:not(:last-child){
+        margin-right: 30px;
+    }
+    
+    .manual-btn:hover{
+        background: #8e8e8e;
+    }
+    
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    
+    #radio2:checked ~ .first{
+        margin-left: -33.33%;
+    }   
+    
+    #radio3:checked ~ .first{
+        margin-left: -66.66%;
+    }
+    
+    .navigation-auto div{
+        border: 2px solid #423a56;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .navigation-auto{
+        position: absolute;
+        display: flex;
+        width: 400px;
+        justify-content: center;
+        margin-top: 680px;
+        margin-left: 3rem;
+    }
+    
+    .navigation-auto div:not(:last-child){
+        margin-right: 30px;
+    }
+    
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+        background: #8e8e8e;
+    }
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+        background: #8e8e8e;
+    }
+    #radio3:checked ~ .navigation-auto .auto-btn3{
+        background: #8e8e8e;
+    }
 }
